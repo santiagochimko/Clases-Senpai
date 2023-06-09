@@ -1,0 +1,12 @@
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-item{
+    margin: 0 5px 15px 0;
+    list-style: none;
+}
+
+.main-div{
+    margin-bottom: 20px;
+}

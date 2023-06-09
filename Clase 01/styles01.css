@@ -1,0 +1,23 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+article {
+    margin: 0 auto;
+    background-color: orange;
+    width: 1000px;
+    color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+h1 {
+    text-align: center;
+}

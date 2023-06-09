@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+}
+
+aside{
+    width: 20%;
+    padding: 20px;
+}
+
+main{
+padding: 20px;
+}
+
+.container{
+    width: 80%;  
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+header{
+margin-bottom: 20px;
+}
+
+header img{
+    object-fit: cover;
+    width: 100%;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+p.container{
+    margin-bottom: 20px;
+}
+
+article{
+    display: flex;
+}
+
+article img{
+    width: 100%;
+    float: right;
+}

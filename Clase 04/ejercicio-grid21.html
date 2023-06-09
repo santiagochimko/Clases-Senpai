@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 60px 2fr 1fr 60px;
+            grid-template-areas: "encabezado encabezado"
+                "sidebar main-content"
+                "sidebar extra-content"
+                "pie-pagina pie-pagina"
+            ;
+            gap: 10px;            
+        }
+
+        header {
+            grid-area: encabezado;
+            background-color: rgb(29, 135, 221);
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: rgb(17, 129, 22);
+        }
+
+        .main-content {
+            grid-area: main-content;
+            background-color: rgb(224, 221, 32);
+            ;
+        }
+
+        .extra-content {
+            grid-area: extra-content;
+            background-color: rgb(32, 204, 46);
+        }
+
+        footer {
+            grid-area: pie-pagina;
+            background-color: rgb(221, 131, 29);
+        }
+        h1{
+           justify-content: center;
+            display: flex;
+            align-items: center;              
+            height: 100%;        
+        }
+    </style>
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>header</h1>
+    </header>
+
+    <aside class="sidebar">
+        <h1>header</h1>
+    </aside>
+    <section class="main-content">
+        <h1>header</h1>
+    </section>
+    <section class="extra-content">
+        <h1>header</h1>
+    </section>
+
+
+    <footer class="pie-pagina">
+        <h1>header</h1>
+    </footer>
+</body>
+
+</html>

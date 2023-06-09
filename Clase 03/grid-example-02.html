@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 60px 1fr 1fr 1fr;
+            grid-template-areas: "encabezado"
+                "section-cero"
+                "section-uno"
+                "section-dos"
+            ;
+        }
+
+        .encabezado {
+            grid-area: encabezado;
+            background-color: black;
+            border: 5px solid black;
+        }
+
+        .section-cero {
+            grid-area: section-cero;
+            background-color: aqua;
+            border: 5px solid black;
+            ;
+        }
+
+        .section-uno {
+            grid-area: section-uno;            
+            background-color: rgb(32, 204, 46);
+            border: 5px solid black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 2fr;
+            grid-template-areas: "titulo titulo titulo titulo";
+            gap: 0 10px;
+        }
+
+        .section-dos {
+            grid-area: section-dos;
+            background-color: rgb(168, 37, 37);
+            border: 5px solid black;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .img{
+            background-color: blueviolet;
+        }
+        .titulo{
+            grid-area: titulo;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="encabezado">
+        <img src="" alt="logo">
+        <nav>
+            <ul>
+                <a href="#">Inicio</a>
+                <a href="#">About</a>
+                <a href="#">Contacto</a>
+            </ul>
+        </nav>
+    </header>
+    <section class="section-cero">
+
+    </section>
+    <section class="section-uno">
+       <h1 class="titulo">Hola</h1>
+        <div class="img">1</div>
+        <div class="img">2</div>
+        <div class="img">3</div>
+        <div class="img">4</div>
+    </section>
+    <section class="section-dos">
+
+    </section>
+</body>
+
+</html>

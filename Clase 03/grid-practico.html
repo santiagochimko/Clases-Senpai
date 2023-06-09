@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: auto;
+            height: 20vh;
+            background-color: aqua;
+        }
+        main {
+            width: auto;
+            display: grid;
+            height: 1000px;
+            grid-template-rows: 2fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "img img img"
+                "section-uno section-uno  aside"
+                "section-dos section-dos aside";
+        }
+
+        section,
+        aside {            
+            background-color: aqua;
+            border: 1px solid black;     
+            width: auto;               
+        }
+       
+        .img-frame {
+            grid-area: img;
+            width: 100%;
+            background: url("https://images.unsplash.com/photo-1682695794816-7b9da18ed470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+            background-position: bottom;
+            background-size: cover;
+        }
+
+        .section-uno {
+            grid-area: section-uno;
+        }
+
+        .section-dos {
+            grid-area: section-dos;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-main">
+        <nav>
+
+        </nav>
+    </header>
+    <main>        
+        <section class="img-frame">
+
+        </section>
+        <section class="section-uno">
+            1
+        </section>
+        <section class="section-dos">
+        </section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <aside class="aside">
+            3
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
