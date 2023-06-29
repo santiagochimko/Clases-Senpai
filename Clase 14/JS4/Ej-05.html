@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirección de correo electrónico</title>
+</head>
+
+<body>
+  <button onclick="redirigirCorreo()">Ir al correo</button>
+
+  <script>
+    function redirigirCorreo() {
+      let num = Math.floor(Math.random() * 3);
+
+      if (num === 0) {
+        window.location.href = "https://www.outlook.com";
+      } else if (num === 1) {
+        window.location.href = "https://mail.google.com";
+      } else {
+        window.location.href = "https://mail.yahoo.com";
+      }
+    }
+  </script>
+</body>
+
+</html>

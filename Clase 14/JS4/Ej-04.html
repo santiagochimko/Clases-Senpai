@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abrir Ventana</title>
+</head>
+
+<body>
+  <button onclick="abrirVentana()">Abrir Ventana</button>
+
+  <script>
+    function abrirVentana() {
+      const ancho = 600;
+      const altura = 300;
+      const opciones = `width=${ancho}, height=${altura}`;
+
+      window.open("", "_blank", opciones);
+    }
+  </script>
+</body>
+
+</html>

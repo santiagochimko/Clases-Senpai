@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To do list</title>
+  </head>
+
+  <body>
+    <h1>Lista de tareas</h1>
+    <ul id="lista-tareas">
+      <li>
+        Comprar alimentos
+        <span
+          ><button class="eliminar" onclick="eliminarTarea(this)">
+            X
+          </button></span
+        >
+      </li>
+      <li>
+        Pagar facturas
+        <span
+          ><button class="eliminar" onclick="eliminarTarea(this)">
+            X
+          </button></span
+        >
+      </li>
+      <li>
+        Sacar el perro
+        <span
+          ><button class="eliminar" onclick="eliminarTarea(this)">
+            X
+          </button></span
+        >
+      </li>
+      <li>
+        Llamar a Juan
+        <span
+          ><button class="eliminar" onclick="eliminarTarea(this)">
+            X
+          </button></span
+        >
+      </li>
+    </ul>
+
+    <button onclick="agregarTarea()">Agregar nueva tarea</button>
+
+    <!-- para esta tarea van a usar el classList-->
+    <button onclick="">Agregar nueva tarea Importante</button>
+  </body>
+
+  <script src="main.js"></script>
+</html>

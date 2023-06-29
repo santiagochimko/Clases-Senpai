@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validación de clave</title>
+</head>
+
+<body>
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required><br>
+
+    <label for="clave">Clave:</label>
+    <input type="password" id="clave" required onblur="validarClave()"><br>
+
+    <input type="submit" value="Ingresar">
+  </form>
+
+  <script>
+    function validarClave() {
+      const claveInput = document.getElementById("clave");
+      const clave = claveInput.value;
+
+      if (clave.length < 7 || clave.length > 20) {
+        alert("La clave debe tener entre 7 y 20 caracteres.");
+      }
+    }
+  </script>
+</body>
+
+</html>

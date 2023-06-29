@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botones</title>
+</head>
+
+<body>
+  <button id="boton1">1</button>
+  <button id="boton2">2</button>
+  <button id="boton3">3</button>
+
+  <script>
+    // Obtener referencias a los botones
+    const boton1 = document.getElementById("boton1");
+    const boton2 = document.getElementById("boton2");
+    const boton3 = document.getElementById("boton3");
+
+    // Agregar eventos de clic a los botones
+    boton1.addEventListener("click", function () {
+      mostrarMensaje("Se presionó el botón 1");
+    });
+
+    boton2.addEventListener("click", function () {
+      mostrarMensaje("Se presionó el botón 2");
+    });
+
+    boton3.addEventListener("click", function () {
+      mostrarMensaje("Se presionó el botón 3");
+    });
+
+    // Función para mostrar el mensaje en la consola o en otro lugar
+    function mostrarMensaje(mensaje) {
+      console.log(mensaje);
+      // Otra opción: Mostrar el mensaje en un elemento HTML
+      // const mensajeElemento = document.getElementById("mensaje");
+      // mensajeElemento.innerText = mensaje;
+    }
+  </script>
+</body>
+
+</html>

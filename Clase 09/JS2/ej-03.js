@@ -1,0 +1,20 @@
+//Ejercicio 3
+
+// variables para contar las notas mayores o iguales a 7 y las notas menores
+let notasMayoresOigualesA7 = 0;
+let notasMenores = 0;
+
+// Leer 10 notas de alumnos y contar cuántas son mayores o iguales a 7 y cuántas son menores
+for (let i = 1; i <= 10; i++) {
+  let nota = parseFloat(prompt("Ingrese la nota del alumno " + i + ":"));
+
+  if (nota >= 7) {
+    notasMayoresOigualesA7++;
+  } else {
+    notasMenores++;
+  }
+}
+
+// Mostrar el resultado
+console.log("Cantidad de alumnos con notas mayores o iguales a 7: " + notasMayoresOigualesA7);
+console.log("Cantidad de alumnos con notas menores a 7: " + notasMenores);

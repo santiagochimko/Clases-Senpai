@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cambiar texto en tiempo real con JavaScript</title>
+</head>
+<body>
+  <input type="text" id="inputTexto" oninput="actualizarTexto()">
+  <p id="nombre">Cambiame</p>
+
+  <script>
+    function actualizarTexto() {
+      let input = document.getElementById("inputTexto");
+      let texto = input.value;
+      let elementoP = document.getElementById("nombre");
+      elementoP.textContent = texto;
+    }
+  </script>
+</body>
+</html>

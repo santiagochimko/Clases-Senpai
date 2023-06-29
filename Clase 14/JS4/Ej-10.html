@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Checkbox</title>
+</head>
+<body>
+    <form>
+        <label for="checkbox">Confirma los términos y condiciones?</label>
+        <input type="checkbox" id="checkbox" onchange="activarBoton(this)">
+        <button type="submit" id="boton" disabled>Enviar</button>
+      </form>
+    
+      <script>
+        function activarBoton(checkbox) {
+          const boton = document.getElementById("boton");
+          boton.disabled = !checkbox.checked;
+        }
+      </script>
+</body>
+</html>

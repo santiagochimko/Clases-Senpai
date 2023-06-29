@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color con Mouse</title>
+    <style>
+        #elementoH1 {
+          color: black;
+          background-color: white;
+        }
+    
+        #elementoH1:hover {
+          color: red;
+          background-color: yellow;
+        }
+      </style>
+</head>
+<body>
+    <h1 id="elementoH1">Texto de ejemplo</h1>
+
+  <script>
+    const elementoH1 = document.getElementById("elementoH1");
+
+    elementoH1.addEventListener("mouseenter", function() {
+      elementoH1.style.color = "red";
+      elementoH1.style.backgroundColor = "yellow";
+    });
+
+    elementoH1.addEventListener("mouseleave", function() {
+      elementoH1.style.color = "black";
+      elementoH1.style.backgroundColor = "white";
+    });
+  </script>
+</body>
+</html>

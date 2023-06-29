@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventana Emergente</title>
+</head>
+
+<body>
+  <button onclick="abrirVentana()">Abrir Ventana</button>
+
+  <script>
+    function abrirVentana() {
+      const ancho = window.screen.width;
+      const altura = window.screen.height / 2;
+      const opciones = `width=${ancho}, height=${altura}, top=0, left=0`;
+
+      window.open("", "_blank", opciones);
+    }
+  </script>
+</body>
+
+</html>
